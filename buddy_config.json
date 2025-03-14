@@ -1,0 +1,10 @@
+{
+    "email": {
+        "sender": "your_email@gmail.com",
+        "password": "your_password"
+    },
+    "wake_word": "are you there buddy",
+    "news_api_key": "your_newsapi_key",
+    "weather_api_key": "your_openweathermap_key",
+    "city": "New York"
+}
