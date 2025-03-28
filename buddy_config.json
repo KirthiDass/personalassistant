@@ -4,7 +4,7 @@
         "password": "your_password"
     },
     "wake_word": "are you there buddy",
-    "news_api_key": "your_newsapi_key",
+    "news_api_key": "pub_76765c5a185af649e086356187e43117ed7d2",
     "weather_api_key": "your_openweathermap_key",
     "city": "New York"
 }
