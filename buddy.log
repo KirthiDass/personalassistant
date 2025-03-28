@@ -220,3 +220,316 @@ A detailed migration guide is available here: https://github.com/openai/openai-p
 2025-03-14 09:21:28,101 - INFO - Command received: badi shutdown
 2025-03-14 09:21:28,315 - INFO - Speaking: Shutting down in 10 seconds.
 2025-03-14 09:21:37,497 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:23:40,804 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 12:23:40,805 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 12:23:41,276 - INFO - Speaking: Hello! I am Buddy, your AI assistant. Say 'Are you there, Buddy?' to wake me up.
+2025-03-14 12:23:53,309 - INFO - Command received: are you there buddy
+2025-03-14 12:23:53,506 - INFO - Speaking: I am ready! How can I assist you?
+2025-03-14 12:24:02,030 - INFO - Command received: hi buddy
+2025-03-14 12:24:02,219 - ERROR - GPT error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-14 12:24:02,220 - INFO - Speaking: Sorry, I couldn't connect to the AI brain. Try again later!
+2025-03-14 12:24:13,887 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:24:22,078 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:24:35,977 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:24:44,656 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:24:56,849 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:25:06,796 - INFO - Command received: mute my laptop
+2025-03-14 12:25:06,988 - ERROR - GPT error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-14 12:25:06,988 - INFO - Speaking: Sorry, I couldn't connect to the AI brain. Try again later!
+2025-03-14 12:25:20,670 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:25:33,596 - INFO - Command received: i said stop
+2025-03-14 12:25:33,783 - ERROR - GPT error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-14 12:25:33,784 - INFO - Speaking: Sorry, I couldn't connect to the AI brain. Try again later!
+2025-03-14 12:25:44,252 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:26:01,573 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:26:09,470 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 12:45:15,129 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 12:45:15,130 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 12:56:53,061 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 12:56:53,061 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 13:00:43,950 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 13:00:43,950 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 13:03:43,247 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 13:03:43,248 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 13:03:43,424 - WARNING - Missing key 'language' in config, using default: en
+2025-03-14 13:03:43,424 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-14 13:03:43,424 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-14 13:03:43,424 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-14 13:04:00,870 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:04:08,409 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:04:18,165 - INFO - Command received: are you there buddy
+2025-03-14 13:04:18,358 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-14 13:04:34,858 - INFO - Command received: what's the weather now
+2025-03-14 13:04:35,041 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-14 13:04:46,365 - INFO - Command received: shut down buddy
+2025-03-14 13:04:46,561 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-14 13:04:57,575 - INFO - Speaking: Shutting down Buddy.
+2025-03-14 13:08:01,887 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 13:08:01,887 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 13:08:02,032 - WARNING - Missing key 'language' in config, using default: en
+2025-03-14 13:08:02,032 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-14 13:08:02,032 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-14 13:08:02,033 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-14 13:08:18,128 - INFO - Command received: are you there buddy
+2025-03-14 13:08:18,320 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-14 13:08:25,603 - INFO - Command received: buddy
+2025-03-14 13:08:25,782 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-14 13:08:37,524 - INFO - Command received: shutdown
+2025-03-14 13:08:37,711 - INFO - Speaking: Shutting down in 10 seconds.
+2025-03-14 13:08:50,223 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:29:31,453 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 13:29:31,453 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 13:29:31,881 - WARNING - Missing key 'language' in config, using default: en
+2025-03-14 13:29:31,881 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-14 13:29:31,881 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-14 13:29:31,881 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-14 13:29:45,602 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:29:56,660 - INFO - Command received: are you there buddy
+2025-03-14 13:29:56,873 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-14 13:30:09,218 - INFO - Command received: what can i do someone irritate me
+2025-03-14 13:30:09,413 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-14 13:30:21,038 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:30:31,284 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:30:40,395 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:30:50,324 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:30:59,401 - INFO - Command received: send email
+2025-03-14 13:30:59,598 - INFO - Speaking: Who should I send it to?
+2025-03-14 13:31:08,906 - INFO - Command received: shakti prakash gmail.com
+2025-03-14 13:31:09,118 - INFO - Speaking: What's the subject?
+2025-03-14 13:31:16,433 - INFO - Command received: don't disturb me
+2025-03-14 13:31:16,642 - INFO - Speaking: What's the message?
+2025-03-14 13:31:23,948 - INFO - Command received: you are a stupid
+2025-03-14 13:31:24,157 - INFO - Speaking: Email credentials are not configured. Please update them.
+2025-03-14 13:31:34,138 - INFO - Command received: update
+2025-03-14 13:31:34,333 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-14 13:31:50,023 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:32:07,016 - INFO - Command received: shutdown
+2025-03-14 13:32:07,231 - INFO - Speaking: Shutting down in 10 seconds.
+2025-03-14 13:32:19,362 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:35:28,142 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 13:35:28,143 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 13:35:28,839 - WARNING - Missing key 'language' in config, using default: en
+2025-03-14 13:35:28,839 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-14 13:35:28,839 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-14 13:35:28,840 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-14 13:35:47,912 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:36:00,859 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:36:11,187 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:36:20,067 - INFO - Command received: are you there buddy
+2025-03-14 13:36:20,279 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-14 13:36:29,195 - INFO - Command received: open jio mode
+2025-03-14 13:36:29,391 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-14 13:36:43,620 - INFO - Command received: start gui mode
+2025-03-14 13:36:43,833 - INFO - Speaking: Starting GUI mode.
+2025-03-14 13:37:22,082 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 13:37:22,082 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 13:37:22,231 - WARNING - Missing key 'language' in config, using default: en
+2025-03-14 13:37:22,231 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-14 13:37:22,231 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-14 13:37:22,232 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-14 13:37:36,058 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:37:44,944 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:38:06,587 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:38:18,026 - INFO - Command received: shutdown
+2025-03-14 13:38:24,295 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:38:31,557 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:38:39,060 - INFO - Command received: are you there buddy
+2025-03-14 13:38:39,262 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-14 13:38:53,458 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 13:39:03,392 - INFO - Command received: shutdown
+2025-03-14 13:39:03,584 - INFO - Speaking: Shutting down in 10 seconds.
+2025-03-14 13:39:14,645 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 15:54:46,280 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 15:54:46,280 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 15:54:46,723 - WARNING - Missing key 'language' in config, using default: en
+2025-03-14 15:54:46,723 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-14 15:54:46,723 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-14 15:54:46,724 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-14 15:55:29,319 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-14 15:55:29,319 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-14 15:55:29,485 - WARNING - Missing key 'language' in config, using default: en
+2025-03-14 15:55:29,486 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-14 15:55:29,486 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-14 15:55:29,486 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-14 15:55:52,953 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 15:56:00,263 - INFO - Command received: are you there buddy
+2025-03-14 15:56:00,465 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-14 15:56:10,003 - INFO - Command received: create file
+2025-03-14 15:56:10,193 - INFO - Speaking: What’s the filename?
+2025-03-14 15:56:39,573 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-14 15:56:55,315 - INFO - Command received: restart
+2025-03-14 15:56:55,521 - INFO - Speaking: Restarting in 10 seconds.
+2025-03-14 15:57:05,176 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-18 15:39:14,973 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-18 15:39:14,974 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-18 15:39:15,165 - INFO - Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: Typelib different than module
+2025-03-18 15:39:15,180 - INFO - # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+2025-03-18 15:39:15,248 - INFO - # Generating comtypes.gen.SpeechLib
+2025-03-18 15:39:15,900 - WARNING - Missing key 'language' in config, using default: en
+2025-03-18 15:39:15,900 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-18 15:39:15,900 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-18 15:39:15,901 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-18 15:39:33,220 - INFO - Command received: stop
+2025-03-18 15:39:41,843 - INFO - Speaking: Shutting down Buddy.
+2025-03-18 15:39:44,133 - INFO - Buddy terminated by user.
+2025-03-18 15:55:17,296 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-18 15:55:17,296 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-18 15:55:17,534 - WARNING - Missing key 'language' in config, using default: en
+2025-03-18 15:55:17,535 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-18 15:55:17,535 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-18 15:55:17,535 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-18 15:55:41,023 - INFO - Speaking: Microphone or internet issue detected.
+2025-03-18 15:55:44,453 - ERROR - Speech recognition error: recognition connection failed: [Errno 11001] getaddrinfo failed
+2025-03-18 15:55:48,649 - INFO - Speaking: Microphone or internet issue detected.
+2025-03-18 15:55:52,158 - ERROR - Speech recognition error: recognition connection failed: [Errno 11001] getaddrinfo failed
+2025-03-18 15:55:57,467 - INFO - Speaking: Microphone or internet issue detected.
+2025-03-18 15:56:00,988 - ERROR - Speech recognition error: recognition connection failed: [Errno 11001] getaddrinfo failed
+2025-03-18 15:56:05,296 - INFO - Speaking: Microphone or internet issue detected.
+2025-03-18 15:56:08,682 - ERROR - Speech recognition error: recognition connection failed: [Errno 11001] getaddrinfo failed
+2025-03-18 15:56:12,285 - INFO - Speaking: Microphone or internet issue detected.
+2025-03-18 15:56:15,698 - ERROR - Speech recognition error: recognition connection failed: [Errno 11001] getaddrinfo failed
+2025-03-18 15:56:29,575 - INFO - Speaking: Microphone or internet issue detected.
+2025-03-18 15:56:32,993 - ERROR - Speech recognition error: recognition connection failed: [Errno 11001] getaddrinfo failed
+2025-03-18 15:56:33,227 - INFO - Speaking: Shutting down Buddy.
+2025-03-18 15:56:35,491 - INFO - Buddy terminated by user.
+2025-03-18 15:57:41,403 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-18 15:57:41,403 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-18 15:57:41,588 - WARNING - Missing key 'language' in config, using default: en
+2025-03-18 15:57:41,588 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-18 15:57:41,589 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-18 15:57:41,589 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-18 15:57:54,749 - INFO - Command received: are you there buddy
+2025-03-18 15:57:54,979 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-18 15:58:04,805 - INFO - Command received: can you please shut down
+2025-03-18 15:58:05,031 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-18 15:58:15,781 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-18 15:58:31,239 - INFO - Command received: shutdown buddy
+2025-03-18 15:58:31,466 - INFO - Speaking: Shutting down in 10 seconds.
+2025-03-23 20:01:07,480 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-23 20:01:07,481 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-23 20:01:07,915 - WARNING - Missing key 'language' in config, using default: en
+2025-03-23 20:01:07,915 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-23 20:01:07,915 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-23 20:01:07,915 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-23 20:01:23,612 - INFO - Command received: are you there buddy
+2025-03-23 20:01:23,857 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-23 20:01:42,902 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-23 20:01:52,841 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-23 20:02:00,571 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-23 20:02:08,427 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-23 20:02:16,045 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-23 20:02:32,591 - INFO - Command received: shutdown buddy
+2025-03-23 20:02:32,821 - INFO - Speaking: Shutting down in 10 seconds.
+2025-03-23 20:02:43,399 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-25 16:21:50,518 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-25 16:21:50,519 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-25 16:21:51,169 - WARNING - Missing key 'language' in config, using default: en
+2025-03-25 16:21:51,169 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-25 16:21:51,169 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-25 16:21:51,170 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-25 16:22:04,803 - INFO - Command received: are you there buddy
+2025-03-25 16:22:05,026 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-25 16:22:12,412 - INFO - Command received: weather today
+2025-03-25 16:22:12,621 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-25 16:22:25,169 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-25 16:22:33,589 - INFO - Command received: what is the news
+2025-03-25 16:22:33,788 - INFO - Speaking: News API key is missing or invalid. Please configure it.
+2025-03-25 16:22:48,117 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-25 16:22:56,145 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-25 16:23:06,090 - INFO - Command received: tell me about battery
+2025-03-25 16:23:11,173 - INFO - Speaking: No info found on battery.
+2025-03-25 16:23:13,881 - ERROR - Wikipedia error: "Battery" may refer to: 
+Electric battery
+Battery (crime)
+Automotive battery
+Battery indicator
+Energy storage
+List of battery types
+Battery (tort)
+Artillery battery
+Main battery
+Secondary battery (artillery)
+firearm action
+Battery (electro-industrial band)
+Battery (hardcore punk band)
+"Battery" (song)
+Drums
+Drumline
+Percussion section
+Native Instruments
+Battery (chess)
+Battery (novel series)
+Battery Records (disambiguation)
+The Battery (disambiguation)#Films
+The Battery (Manhattan)
+The Battery (disambiguation)
+Battery Island
+Battery Park (disambiguation)
+Battery Point, Tasmania
+Battery (baseball)
+stamp mill
+Battery (drink)
+Battery Ventures
+All pages with titles beginning with Battery
+All pages with titles containing Battery
+Battery Building
+Battery cage
+2025-03-25 16:23:25,702 - INFO - Command received: what is the charge
+2025-03-25 16:23:25,904 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-25 16:23:38,838 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-25 16:23:51,167 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-25 16:24:06,539 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-25 16:24:19,203 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-25 16:24:32,835 - INFO - Command received: shutdown
+2025-03-25 16:24:33,053 - INFO - Speaking: Shutting down in 10 seconds.
+2025-03-28 10:13:39,047 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 10:13:39,048 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 10:13:39,799 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 10:13:39,799 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 10:13:39,799 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 10:13:39,799 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 10:14:35,437 - INFO - Speaking: Shutting down Buddy.
+2025-03-28 10:14:37,661 - INFO - Buddy terminated by user.
+2025-03-28 10:15:03,425 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 10:15:03,425 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 10:15:03,699 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 10:15:03,699 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 10:15:03,699 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 10:15:03,700 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 10:15:55,198 - INFO - Command received: are you there buddy
+2025-03-28 10:15:55,405 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-28 10:16:08,410 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 10:16:20,539 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 10:16:29,742 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 10:16:39,078 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 10:16:50,166 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 10:16:59,223 - INFO - Command received: badi shutdown
+2025-03-28 10:16:59,440 - INFO - Speaking: Shutting down in 10 seconds.
+2025-03-28 10:17:09,792 - INFO - Speaking: Sorry, I didn't catch that.
