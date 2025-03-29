@@ -7,7 +7,6 @@ import pywhatkit
 import wikipedia
 import datetime
 import requests
-import openai
 import psutil
 import smtplib
 import pyautogui
@@ -24,13 +23,11 @@ from datetime import datetime as dt
 import re
 import platform
 import sys
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # Configuration and Constants
 CONFIG_FILE = "buddy_config.json"
 LOG_FILE = "buddy.log"
-
-# OpenAI API Key (Replace with your actual key)
-openai.api_key = "Your_OpenAI_API_Key"  # Replace this with your actual key!
 
 # Setup logging
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO, 
@@ -57,14 +54,25 @@ except Exception as e:
     logging.error(f"TTS init error: {e}")
     exit(1)
 
+# Load GPT-2 model and tokenizer
+try:
+    tokenizer = AutoTokenizer.from_pretrained("openai-community/gpt2")
+    model = AutoModelForCausalLM.from_pretrained("openai-community/gpt2")
+    print("GPT-2 model loaded successfully.")
+    logging.info("GPT-2 model loaded successfully.")
+except Exception as e:
+    print(f"Failed to load GPT-2 model: {e}")
+    logging.error(f"GPT-2 load error: {e}")
+    exit(1)
+
 # Load or create configuration
 def load_config():
     """Load configuration from JSON file or create default."""
     default_config = {
         "email": {"sender": "your_email@gmail.com", "password": "your_password"},
         "wake_word": "are you there buddy",
-        "news_api_key":"390427571d96423e97c1040796d6b159",
-        "weather_api_key": "bf244f1626d9347db0bf15ee4af0d746",
+        "news_api_key": "390427571d96423e97c1040796d6b159",  # Your NewsAPI.org key
+        "weather_api_key": "bf244f1626d9347db0bf15ee4af0d746",  # Your OpenWeatherMap key
         "city": "New York",
         "language": "en",
         "voice_index": 0,
@@ -136,28 +144,37 @@ def listen(timeout=5):
         return ""
 
 def chat_with_gpt(prompt, use_context=True):
-    """Enhanced ChatGPT integration with conversation history."""
+    """Use local GPT-2 model for text generation with conversation history."""
     global conversation_history
-    if not openai.api_key or "Your_OpenAI_API_Key" in openai.api_key:
-        return "OpenAI API key is missing or invalid. Please configure it."
     try:
-        messages = [
-            {"role": "system", "content": "You are Buddy, a highly intelligent and helpful AI assistant created by xAI. Provide accurate, concise, and friendly responses."}
-        ]
-        
+        # Build input with system prompt and history
+        input_text = "You are Buddy, a helpful AI assistant created by xAI. Provide accurate, concise, and friendly responses.\n"
         if use_context and conversation_history:
-            messages.extend(conversation_history[-config["max_history"]:])
+            for entry in conversation_history[-config["max_history"]:]:
+                input_text += f"{entry['role']}: {entry['content']}\n"
+        input_text += f"user: {prompt}"
+
+        # Tokenize input
+        inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=512)
         
-        messages.append({"role": "user", "content": prompt})
-        
-        response = openai.ChatCompletion.create(
-            model="gpt-4",
-            messages=messages,
-            max_tokens=500,
-            temperature=0.7
+        # Generate response
+        outputs = model.generate(
+            inputs["input_ids"],
+            max_length=500,  # Max output length
+            num_return_sequences=1,
+            temperature=0.7,  # Creativity control
+            top_k=50,        # Limit token sampling
+            top_p=0.95,      # Nucleus sampling
+            pad_token_id=tokenizer.eos_token_id,  # Handle padding
+            do_sample=True   # Enable sampling for varied responses
         )
-        reply = response["choices"][0]["message"]["content"].strip()
         
+        # Decode response
+        reply = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
+        # Extract only the generated part (remove input echo)
+        reply = reply[len(input_text):].strip()
+
+        # Update conversation history
         conversation_history.append({"role": "user", "content": prompt})
         conversation_history.append({"role": "assistant", "content": reply})
         if len(conversation_history) > config["max_history"] * 2:
@@ -166,26 +183,26 @@ def chat_with_gpt(prompt, use_context=True):
         
         return reply
     except Exception as e:
-        logging.error(f"GPT error: {e}")
-        return f"Sorry, GPT failed: {str(e)}"
+        logging.error(f"GPT-2 error: {e}")
+        return f"Sorry, GPT-2 failed: {str(e)}"
 
 # Advanced AI Features
 def summarize_text(text):
-    """Summarize a given text using GPT."""
+    """Summarize a given text using GPT-2."""
     if not text:
         return "No text provided to summarize."
     prompt = f"Summarize this text in a concise manner:\n\n{text}"
     return chat_with_gpt(prompt, use_context=False)
 
 def analyze_sentiment(text):
-    """Analyze sentiment of text using GPT."""
+    """Analyze sentiment of text using GPT-2."""
     if not text:
         return "No text provided to analyze."
     prompt = f"Analyze the sentiment of this text (positive, negative, neutral) and explain why:\n\n{text}"
     return chat_with_gpt(prompt, use_context=False)
 
 def generate_ideas(topic):
-    """Generate creative ideas on a topic using GPT."""
+    """Generate creative ideas on a topic using GPT-2."""
     if not topic:
         return "No topic provided."
     prompt = f"Generate 5 creative ideas related to {topic}."
@@ -333,37 +350,89 @@ def remind(task):
 
 # Enhanced GUI
 def start_gui():
-    """Launch an enhanced GUI for Buddy."""
-    try:
-        root = tk.Tk()
-        root.title("Buddy AI Assistant")
-        root.geometry("600x400")
-        
-        tk.Label(root, text="Buddy AI", font=("Arial", 20)).pack(pady=10)
-        status_label = tk.Label(root, text="Say 'Are you there, Buddy?' to wake me up.", wraplength=550)
-        status_label.pack(pady=10)
-        
-        log_text = tk.Text(root, height=10, width=70)
-        log_text.pack(pady=10)
-        
-        def update_status(text):
+    """Launch an improved GUI for Buddy with buttons and command input."""
+    print("Starting GUI thread...")
+    logging.info("Attempting to start GUI")
+    
+    def update_status(text):
+        try:
             status_label.config(text=text)
-            log_text.insert(tk.END, f"{dt.now()}: {text}\n")
+            log_text.insert(tk.END, f"{dt.now().strftime('%H:%M:%S')}: {text}\n")
             log_text.see(tk.END)
-        
-        def gui_listen():
+        except Exception as e:
+            logging.error(f"Update status error: {e}")
+
+    def gui_listen():
+        try:
             command = listen()
             if command:
                 update_status(f"You said: {command}")
                 execute_command(command)
             root.after(1000, gui_listen)
-        
-        ttk.Button(root, text="Exit", command=root.quit).pack(pady=10)
+        except Exception as e:
+            logging.error(f"GUI listen error: {e}")
+
+    def execute_from_entry():
+        command = command_entry.get().strip()
+        if command:
+            update_status(f"Typed: {command}")
+            execute_command(command)
+            command_entry.delete(0, tk.END)
+
+    try:
+        root = tk.Tk()
+        print("Tkinter root created.")
+        root.title("Buddy AI Assistant")
+        root.geometry("700x500")
+        root.configure(bg="#f0f0f0")
+
+        # Header Frame
+        header_frame = tk.Frame(root, bg="#f0f0f0")
+        header_frame.pack(pady=10)
+        tk.Label(header_frame, text="Buddy AI", font=("Arial", 24, "bold"), bg="#f0f0f0").pack()
+
+        # Status Label
+        status_label = tk.Label(root, text="Listening for commands...", wraplength=650, bg="#f0f0f0", font=("Arial", 12))
+        status_label.pack(pady=5)
+
+        # Log Area
+        log_frame = tk.Frame(root, bg="#f0f0f0")
+        log_frame.pack(pady=10, padx=10, fill=tk.BOTH, expand=True)
+        log_text = tk.Text(log_frame, height=15, width=80, font=("Arial", 10), wrap=tk.WORD)
+        scrollbar = tk.Scrollbar(log_frame, command=log_text.yview)
+        log_text.config(yscrollcommand=scrollbar.set)
+        log_text.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
+
+        # Command Entry
+        entry_frame = tk.Frame(root, bg="#f0f0f0")
+        entry_frame.pack(pady=5)
+        tk.Label(entry_frame, text="Type Command:", bg="#f0f0f0", font=("Arial", 10)).pack(side=tk.LEFT, padx=5)
+        command_entry = tk.Entry(entry_frame, width=50, font=("Arial", 10))
+        command_entry.pack(side=tk.LEFT, padx=5)
+        ttk.Button(entry_frame, text="Run", command=execute_from_entry).pack(side=tk.LEFT)
+
+        # Buttons Frame
+        button_frame = tk.Frame(root, bg="#f0f0f0")
+        button_frame.pack(pady=10)
+        ttk.Button(button_frame, text="News", command=lambda: execute_command("news")).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="Weather", command=lambda: execute_command(f"weather in {config['city']}")).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="Screenshot", command=lambda: execute_command("screenshot")).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="System Status", command=lambda: execute_command("system status")).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="Send Email", command=lambda: execute_command("send email")).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="Exit", command=root.quit).pack(side=tk.LEFT, padx=5)
+
         root.after(1000, gui_listen)
+        print("GUI mainloop starting...")
         root.mainloop()
+    except tk.TclError as e:
+        speak("GUI failed: Display issue detected. Are you running this on a graphical environment?")
+        logging.error(f"TclError in GUI: {e}")
     except Exception as e:
         speak("Failed to launch GUI.")
         logging.error(f"GUI error: {e}")
+    finally:
+        print("GUI thread ended.")
 
 # Command Execution
 def execute_command(command):
@@ -372,6 +441,7 @@ def execute_command(command):
         return
     
     system = platform.system()
+    print(f"Executing command: {command}")
     
     if "open notepad" in command:
         if system == "Windows":
@@ -380,13 +450,13 @@ def execute_command(command):
                 speak("Notepad opened.")
             except FileNotFoundError:
                 speak("Notepad not found.")
-        elif system == "Darwin":  # macOS
+        elif system == "Darwin":
             try:
                 subprocess.Popen(["open", "-a", "TextEdit"])
                 speak("TextEdit opened.")
             except:
                 speak("TextEdit not found.")
-        else:  # Linux
+        else:
             try:
                 subprocess.Popen(["gedit"])
                 speak("Gedit opened.")
@@ -399,13 +469,13 @@ def execute_command(command):
                 speak("Google Chrome opened.")
             except FileNotFoundError:
                 speak("Chrome not found.")
-        elif system == "Darwin":  # macOS
+        elif system == "Darwin":
             try:
                 subprocess.Popen(["open", "-a", "Google Chrome"])
                 speak("Google Chrome opened.")
             except:
                 speak("Chrome not found.")
-        else:  # Linux
+        else:
             try:
                 subprocess.Popen(["google-chrome"])
                 speak("Google Chrome opened.")
@@ -560,7 +630,7 @@ def execute_command(command):
                 os.system("shutdown /s /t 10")
             except:
                 speak("Shutdown failed.")
-        elif system == "Darwin":  # macOS
+        elif system == "Darwin":
             try:
                 speak("Shutting down in 10 seconds.")
                 os.system("sudo shutdown -h +10")
@@ -581,7 +651,7 @@ def execute_command(command):
                 os.system("shutdown /r /t 10")
             except:
                 speak("Restart failed.")
-        elif system == "Darwin":  # macOS
+        elif system == "Darwin":
             try:
                 speak("Restarting in 10 seconds.")
                 os.system("sudo shutdown -r +10")
@@ -600,6 +670,7 @@ def execute_command(command):
         exit(0)
     elif "gui" in command:
         speak("Starting GUI mode.")
+        print("GUI command triggered.")
         threading.Thread(target=start_gui, daemon=True).start()
     else:
         response = chat_with_gpt(command)
@@ -608,7 +679,7 @@ def execute_command(command):
 # Main Loop
 def main():
     """Main loop with wake word detection."""
-    speak("Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.")
+    speak("Hello! I am Buddy, your AI assistant with a local GPT-2 brain. Say 'Are you there, Buddy?' to wake me up.")
     while True:
         try:
             wake_word = listen()
@@ -618,11 +689,11 @@ def main():
                     command = listen()
                     if command:
                         execute_command(command)
-                    time.sleep(1)  # Prevent CPU overload
+                    time.sleep(1)
         except Exception as e:
             logging.error(f"Main loop error: {e}")
             print(f"Error in main loop: {e}. Check {LOG_FILE} for details.")
-            time.sleep(5)  # Pause before retrying
+            time.sleep(5)
 
 if __name__ == "__main__":
     try:

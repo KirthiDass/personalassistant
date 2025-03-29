@@ -533,3 +533,307 @@ Battery cage
 2025-03-28 10:16:59,223 - INFO - Command received: badi shutdown
 2025-03-28 10:16:59,440 - INFO - Speaking: Shutting down in 10 seconds.
 2025-03-28 10:17:09,792 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:22:59,687 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 12:22:59,687 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 12:23:00,248 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 12:23:00,248 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 12:23:00,248 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 12:23:00,250 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 12:23:14,138 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:23:21,853 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:23:32,712 - INFO - Command received: are you there buddy
+2025-03-28 12:23:32,985 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-28 12:23:42,700 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:23:57,678 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:24:05,445 - INFO - Command received: turn on jio imo
+2025-03-28 12:24:05,658 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-28 12:24:18,104 - INFO - Command received: open gui mode
+2025-03-28 12:24:18,303 - INFO - Speaking: Starting GUI mode.
+2025-03-28 12:26:33,369 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 12:26:33,369 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 12:26:33,587 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 12:26:33,587 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 12:26:33,587 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 12:26:33,588 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 12:26:52,012 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:26:58,372 - INFO - Command received: are you there
+2025-03-28 12:27:04,507 - INFO - Command received: are you there buddy
+2025-03-28 12:27:04,730 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-28 12:27:12,904 - INFO - Command received: tell me some news
+2025-03-28 12:27:13,513 - INFO - Speaking: Couldn't fetch news.
+2025-03-28 12:27:15,658 - ERROR - News error: 'articles'
+2025-03-28 12:27:23,512 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:27:35,123 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:27:42,993 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:27:52,258 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:28:04,515 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:28:12,859 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:28:20,933 - INFO - Command received: can you tell me some news
+2025-03-28 12:28:21,458 - INFO - Speaking: Couldn't fetch news.
+2025-03-28 12:28:23,600 - ERROR - News error: 'articles'
+2025-03-28 12:28:30,688 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:28:39,204 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:28:48,784 - INFO - Command received: open gui
+2025-03-28 12:28:49,000 - INFO - Speaking: Starting GUI mode.
+2025-03-28 12:37:32,985 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 12:37:32,986 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 12:37:33,236 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 12:37:33,237 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 12:37:33,237 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 12:37:33,237 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 12:37:49,201 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:37:56,387 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:38:03,519 - INFO - Command received: are you there buddy
+2025-03-28 12:38:03,735 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-28 12:38:15,096 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:38:23,644 - INFO - Command received: in desktop
+2025-03-28 12:38:23,852 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-28 12:38:34,569 - INFO - Command received: create a file
+2025-03-28 12:38:34,784 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-28 12:38:48,347 - INFO - Command received: copy the file named
+2025-03-28 12:38:48,559 - INFO - Speaking: OpenAI API key is missing or invalid. Please configure it.
+2025-03-28 12:39:02,488 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:39:11,488 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:39:27,855 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:39:37,309 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:39:47,259 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:39:48,836 - INFO - Speaking: Shutting down Buddy.
+2025-03-28 12:39:48,836 - ERROR - Speech error: run loop already started
+2025-03-28 12:39:48,837 - INFO - Buddy terminated by user.
+2025-03-28 12:41:18,991 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 12:41:18,991 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 12:41:19,247 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 12:41:19,247 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 12:41:19,247 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 12:41:19,248 - INFO - Speaking: Hello! I am Buddy, your AI assistant with an enhanced brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 12:41:33,142 - INFO - Command received: are you there buddy
+2025-03-28 12:41:33,343 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-28 12:41:41,608 - INFO - Command received: open gui
+2025-03-28 12:41:41,822 - INFO - Speaking: Starting GUI mode.
+2025-03-28 12:41:44,361 - INFO - Attempting to start GUI
+2025-03-28 12:41:51,923 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:41:52,761 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:41:52,761 - ERROR - Speech error: run loop already started
+2025-03-28 12:41:57,509 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:42:05,024 - INFO - Command received: news
+2025-03-28 12:42:06,616 - INFO - Speaking: Couldn't fetch news.
+2025-03-28 12:42:06,616 - ERROR - Speech error: run loop already started
+2025-03-28 12:42:06,616 - ERROR - News error: 'articles'
+2025-03-28 12:42:14,287 - INFO - Command received: why couldn't you why could you fetch news
+2025-03-28 12:42:14,802 - INFO - Speaking: Couldn't fetch news.
+2025-03-28 12:42:14,802 - ERROR - Speech error: run loop already started
+2025-03-28 12:42:14,803 - ERROR - News error: 'articles'
+2025-03-28 12:42:23,127 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:42:23,128 - ERROR - Speech error: run loop already started
+2025-03-28 12:42:30,807 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:42:30,807 - ERROR - Speech error: run loop already started
+2025-03-28 12:42:37,188 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 12:42:37,189 - ERROR - Speech error: run loop already started
+2025-03-28 15:41:07,951 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 15:41:07,952 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 15:42:52,194 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743160283&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDI4M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzI0OGRmYzM5MTE4NjllYzQ5M2M3NmU2NWJmMmZjZjdmNjE1ODI4YjAyNTRjMTJiNDczMTgyZjBmODFkM2E3MDc%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=LUs6M5-A-OoXz-8XW1X-4Lk6IQK9HIF1B0CqZIzoQi7iY4Y6Efww%7EoIbJFhZXRe0HRYFjyPlGGg1HzUh0xF9X38D7x4-n7jarg8m3Gb87OipbCdHHxFUt%7Ek5TLaJunyJk9xa-UfLdvhFpSyzSXD1N5NQO-2nlcWkHtlyfyA6-kXAiMI4V57KqLYGDeGQ9EY-UMkC4zY9iEnc-uCYoAj95JftBb6Jl7xNS5YWPZ3-57F1ekRQX5wx5kmxYqcXlaFW%7E-y3s4XlKd8H4Wrg380tq3QF0Tc0GlIYE7QSuMbhVKK0ln91yJl6c6L0d%7EFy36t%7EYAM-baeDlCwoGK5kv5INyQ__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:44:05,504 - ERROR - GPT-2 load error: openai-community/gpt2 does not appear to have a file named pytorch_model.bin, model.safetensors, tf_model.h5, model.ckpt or flax_model.msgpack.
+2025-03-28 15:46:57,950 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 15:46:57,951 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 15:48:45,780 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743160620&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDYyMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzI0OGRmYzM5MTE4NjllYzQ5M2M3NmU2NWJmMmZjZjdmNjE1ODI4YjAyNTRjMTJiNDczMTgyZjBmODFkM2E3MDc%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=a9jVph1psk7Q68I%7Emqd6JWJGQQ5jAGn68QcXyu69XC7zvFJOULAJW4mCryzmetbuy4DEO6DOKBtPzAZz%7EFDRp0DDLaIoMhDXa3lXXe2Od6EJ9wKSm8dYE5Q8S1-MNTliNEmvPDRBNrCqxvIp9uEORYNnq6t-lAni2RHiZ5vVwggMVryluRoDLwXgMyUA58eAVvX8yVTeYQ9BpO6ckiBFpNkcztlq1dqZDPMs1a1yyELp7NYeJcqdqCN7qlZAFb1PtLbsNMHYHb2xqoYkLbQCF53k4umMM%7EH8-7dsRlEQXNgRRQQKa8c9989LboE3H6-J4x64jUZAR0abioZxiBNp7Q__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:49:53,925 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743160620&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDYyMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzI0OGRmYzM5MTE4NjllYzQ5M2M3NmU2NWJmMmZjZjdmNjE1ODI4YjAyNTRjMTJiNDczMTgyZjBmODFkM2E3MDc%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=a9jVph1psk7Q68I%7Emqd6JWJGQQ5jAGn68QcXyu69XC7zvFJOULAJW4mCryzmetbuy4DEO6DOKBtPzAZz%7EFDRp0DDLaIoMhDXa3lXXe2Od6EJ9wKSm8dYE5Q8S1-MNTliNEmvPDRBNrCqxvIp9uEORYNnq6t-lAni2RHiZ5vVwggMVryluRoDLwXgMyUA58eAVvX8yVTeYQ9BpO6ckiBFpNkcztlq1dqZDPMs1a1yyELp7NYeJcqdqCN7qlZAFb1PtLbsNMHYHb2xqoYkLbQCF53k4umMM%7EH8-7dsRlEQXNgRRQQKa8c9989LboE3H6-J4x64jUZAR0abioZxiBNp7Q__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:50:34,815 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743160620&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDYyMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzI0OGRmYzM5MTE4NjllYzQ5M2M3NmU2NWJmMmZjZjdmNjE1ODI4YjAyNTRjMTJiNDczMTgyZjBmODFkM2E3MDc%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=a9jVph1psk7Q68I%7Emqd6JWJGQQ5jAGn68QcXyu69XC7zvFJOULAJW4mCryzmetbuy4DEO6DOKBtPzAZz%7EFDRp0DDLaIoMhDXa3lXXe2Od6EJ9wKSm8dYE5Q8S1-MNTliNEmvPDRBNrCqxvIp9uEORYNnq6t-lAni2RHiZ5vVwggMVryluRoDLwXgMyUA58eAVvX8yVTeYQ9BpO6ckiBFpNkcztlq1dqZDPMs1a1yyELp7NYeJcqdqCN7qlZAFb1PtLbsNMHYHb2xqoYkLbQCF53k4umMM%7EH8-7dsRlEQXNgRRQQKa8c9989LboE3H6-J4x64jUZAR0abioZxiBNp7Q__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:51:40,663 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743160620&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDYyMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzI0OGRmYzM5MTE4NjllYzQ5M2M3NmU2NWJmMmZjZjdmNjE1ODI4YjAyNTRjMTJiNDczMTgyZjBmODFkM2E3MDc%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=a9jVph1psk7Q68I%7Emqd6JWJGQQ5jAGn68QcXyu69XC7zvFJOULAJW4mCryzmetbuy4DEO6DOKBtPzAZz%7EFDRp0DDLaIoMhDXa3lXXe2Od6EJ9wKSm8dYE5Q8S1-MNTliNEmvPDRBNrCqxvIp9uEORYNnq6t-lAni2RHiZ5vVwggMVryluRoDLwXgMyUA58eAVvX8yVTeYQ9BpO6ckiBFpNkcztlq1dqZDPMs1a1yyELp7NYeJcqdqCN7qlZAFb1PtLbsNMHYHb2xqoYkLbQCF53k4umMM%7EH8-7dsRlEQXNgRRQQKa8c9989LboE3H6-J4x64jUZAR0abioZxiBNp7Q__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:53:32,394 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743160620&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDYyMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzI0OGRmYzM5MTE4NjllYzQ5M2M3NmU2NWJmMmZjZjdmNjE1ODI4YjAyNTRjMTJiNDczMTgyZjBmODFkM2E3MDc%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=a9jVph1psk7Q68I%7Emqd6JWJGQQ5jAGn68QcXyu69XC7zvFJOULAJW4mCryzmetbuy4DEO6DOKBtPzAZz%7EFDRp0DDLaIoMhDXa3lXXe2Od6EJ9wKSm8dYE5Q8S1-MNTliNEmvPDRBNrCqxvIp9uEORYNnq6t-lAni2RHiZ5vVwggMVryluRoDLwXgMyUA58eAVvX8yVTeYQ9BpO6ckiBFpNkcztlq1dqZDPMs1a1yyELp7NYeJcqdqCN7qlZAFb1PtLbsNMHYHb2xqoYkLbQCF53k4umMM%7EH8-7dsRlEQXNgRRQQKa8c9989LboE3H6-J4x64jUZAR0abioZxiBNp7Q__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:54:45,202 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1743160620&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDYyMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzI0OGRmYzM5MTE4NjllYzQ5M2M3NmU2NWJmMmZjZjdmNjE1ODI4YjAyNTRjMTJiNDczMTgyZjBmODFkM2E3MDc%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=a9jVph1psk7Q68I%7Emqd6JWJGQQ5jAGn68QcXyu69XC7zvFJOULAJW4mCryzmetbuy4DEO6DOKBtPzAZz%7EFDRp0DDLaIoMhDXa3lXXe2Od6EJ9wKSm8dYE5Q8S1-MNTliNEmvPDRBNrCqxvIp9uEORYNnq6t-lAni2RHiZ5vVwggMVryluRoDLwXgMyUA58eAVvX8yVTeYQ9BpO6ckiBFpNkcztlq1dqZDPMs1a1yyELp7NYeJcqdqCN7qlZAFb1PtLbsNMHYHb2xqoYkLbQCF53k4umMM%7EH8-7dsRlEQXNgRRQQKa8c9989LboE3H6-J4x64jUZAR0abioZxiBNp7Q__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:55:36,631 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/7c5d3f4b8b76583b422fcb9189ad6c89d5d97a094541ce8932dce3ecabde1421?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1743160168&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDE2OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzdjNWQzZjRiOGI3NjU4M2I0MjJmY2I5MTg5YWQ2Yzg5ZDVkOTdhMDk0NTQxY2U4OTMyZGNlM2VjYWJkZTE0MjE%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=UCCTjQGMWrIl1IfQ2TQW3GWdpchsUGgqDv9TnI-eJp1i-3JLs3pbgOQRoITsOZm9-8uaBdP3mFTsvzIuj5gwQyCn0cr-LBIjIPTAf5594F9u%7E3PX2s275q4ffJsOC81Ta3rARgQQ4DyqtA1QuiVrm92A7nikeT4ty4PjME715DbAWY6i7%7E1bH0Aq9Fft0HTb7B1OyUXtHujnbOAbNEbGZ7AF6LJKtShkqnQ3fSHOsYEklgbevcMnDH99STPT68wG0%7ECmnPLT3UvFvQRjw5tA3%7EUdK7vhi84FUIP2-gZinVHpSgWbN9SLMP5dNIXg-D6bYDAhXytyNNorgN1iB3r65A__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:57:49,504 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/7c5d3f4b8b76583b422fcb9189ad6c89d5d97a094541ce8932dce3ecabde1421?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1743160168&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDE2OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzdjNWQzZjRiOGI3NjU4M2I0MjJmY2I5MTg5YWQ2Yzg5ZDVkOTdhMDk0NTQxY2U4OTMyZGNlM2VjYWJkZTE0MjE%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=UCCTjQGMWrIl1IfQ2TQW3GWdpchsUGgqDv9TnI-eJp1i-3JLs3pbgOQRoITsOZm9-8uaBdP3mFTsvzIuj5gwQyCn0cr-LBIjIPTAf5594F9u%7E3PX2s275q4ffJsOC81Ta3rARgQQ4DyqtA1QuiVrm92A7nikeT4ty4PjME715DbAWY6i7%7E1bH0Aq9Fft0HTb7B1OyUXtHujnbOAbNEbGZ7AF6LJKtShkqnQ3fSHOsYEklgbevcMnDH99STPT68wG0%7ECmnPLT3UvFvQRjw5tA3%7EUdK7vhi84FUIP2-gZinVHpSgWbN9SLMP5dNIXg-D6bYDAhXytyNNorgN1iB3r65A__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:58:41,524 - WARNING - Error while downloading from https://cdn-lfs.hf.co/gpt2/7c5d3f4b8b76583b422fcb9189ad6c89d5d97a094541ce8932dce3ecabde1421?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1743160168&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzE2MDE2OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9ncHQyLzdjNWQzZjRiOGI3NjU4M2I0MjJmY2I5MTg5YWQ2Yzg5ZDVkOTdhMDk0NTQxY2U4OTMyZGNlM2VjYWJkZTE0MjE%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qJnJlc3BvbnNlLWNvbnRlbnQtdHlwZT0qIn1dfQ__&Signature=UCCTjQGMWrIl1IfQ2TQW3GWdpchsUGgqDv9TnI-eJp1i-3JLs3pbgOQRoITsOZm9-8uaBdP3mFTsvzIuj5gwQyCn0cr-LBIjIPTAf5594F9u%7E3PX2s275q4ffJsOC81Ta3rARgQQ4DyqtA1QuiVrm92A7nikeT4ty4PjME715DbAWY6i7%7E1bH0Aq9Fft0HTb7B1OyUXtHujnbOAbNEbGZ7AF6LJKtShkqnQ3fSHOsYEklgbevcMnDH99STPT68wG0%7ECmnPLT3UvFvQRjw5tA3%7EUdK7vhi84FUIP2-gZinVHpSgWbN9SLMP5dNIXg-D6bYDAhXytyNNorgN1iB3r65A__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+2025-03-28 15:59:34,753 - ERROR - GPT-2 load error: openai-community/gpt2 does not appear to have a file named pytorch_model.bin but there is a file for Flax weights. Use `from_flax=True` to load this model from those weights.
+2025-03-28 16:02:12,863 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 16:02:12,864 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 16:03:29,599 - INFO - GPT-2 model loaded successfully.
+2025-03-28 16:03:29,600 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 16:03:29,600 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 16:03:29,600 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 16:03:29,601 - INFO - Speaking: Hello! I am Buddy, your AI assistant with a local GPT-2 brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 16:03:47,134 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 16:03:59,105 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 16:04:08,319 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 16:04:15,790 - INFO - Speaking: Sorry, I didn't catch that.
+2025-03-28 16:04:23,180 - INFO - Command received: are you there
+2025-03-28 16:04:28,175 - INFO - Command received: are you bad bud
+2025-03-28 16:04:33,806 - INFO - Command received: are you there buddy
+2025-03-28 16:04:34,022 - INFO - Speaking: I am ready! How can I assist you today?
+2025-03-28 16:04:46,401 - INFO - Command received: buddy how are you
+2025-03-28 16:05:20,999 - INFO - Speaking: ?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+
+client: buddy what are you doing?
+
+client: buddy what are you doing?
+
+user: buddy what are you doing?
+2025-03-28 16:05:47,255 - INFO - Speaking: Shutting down Buddy.
+2025-03-28 16:05:47,255 - ERROR - Speech error: run loop already started
+2025-03-28 16:05:47,256 - INFO - Buddy terminated by user.
+2025-03-28 16:07:20,871 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 16:07:20,871 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 16:07:23,180 - INFO - GPT-2 model loaded successfully.
+2025-03-28 16:07:23,180 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 16:07:23,180 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 16:07:23,180 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 16:07:23,181 - INFO - Speaking: Hello! I am Buddy, your AI assistant with a local GPT-2 brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 16:07:39,258 - INFO - Speaking: vaai ah modu da naaye
+2025-03-28 16:07:46,111 - INFO - Command received: hello hello
+2025-03-28 16:07:56,267 - INFO - Command received: hello hello
+2025-03-28 16:08:01,690 - INFO - Speaking: vaai ah modu da naaye
+2025-03-28 16:08:10,430 - INFO - Speaking: vaai ah modu da naaye
+2025-03-28 16:08:17,976 - INFO - Speaking: vaai ah modu da naaye
+2025-03-28 16:08:32,851 - INFO - Speaking: vaai ah modu da naaye
+2025-03-28 16:08:44,617 - INFO - Speaking: vaai ah modu da naaye
+2025-03-28 16:08:48,868 - INFO - Speaking: Shutting down Buddy.
+2025-03-28 16:08:51,017 - INFO - Buddy terminated by user.
+2025-03-28 16:09:03,771 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 16:09:03,772 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 16:09:06,292 - INFO - GPT-2 model loaded successfully.
+2025-03-28 16:09:06,293 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 16:09:06,293 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 16:09:06,293 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 16:09:06,294 - INFO - Speaking: Hello! I am Buddy, your AI assistant with a local GPT-2 brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 16:09:23,186 - INFO - Command received: hey buddy
+2025-03-28 16:09:32,641 - INFO - Speaking: fuck you
+2025-03-28 16:09:44,097 - INFO - Speaking: fuck you
+2025-03-28 16:09:52,926 - INFO - Speaking: fuck you
+2025-03-28 16:10:04,372 - INFO - Speaking: fuck you
+2025-03-28 16:10:11,141 - INFO - Speaking: fuck you
+2025-03-28 16:10:18,893 - INFO - Speaking: fuck you
+2025-03-28 16:10:28,768 - INFO - Speaking: fuck you
+2025-03-28 16:10:38,207 - INFO - Speaking: fuck you
+2025-03-28 16:10:45,526 - INFO - Speaking: fuck you
+2025-03-28 16:10:52,798 - INFO - Speaking: fuck you
+2025-03-28 16:11:00,333 - INFO - Speaking: Shutting down Buddy.
+2025-03-28 16:11:02,474 - INFO - Buddy terminated by user.
+2025-03-28 16:14:36,268 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 16:14:36,269 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 16:14:40,932 - INFO - GPT-2 model loaded successfully.
+2025-03-28 16:14:40,932 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 16:14:40,932 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 16:14:40,932 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 16:14:40,933 - INFO - Speaking: Hello! I am Buddy, your AI assistant with a local GPT-2 brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 16:14:57,313 - INFO - Speaking: Shutting down Buddy.
+2025-03-28 16:14:59,555 - INFO - Buddy terminated by user.
+2025-03-28 16:15:24,035 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 16:15:24,035 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 16:15:35,716 - INFO - GPT-2 model loaded successfully.
+2025-03-28 16:15:35,716 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 16:15:35,716 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 16:15:35,716 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 16:15:35,717 - INFO - Speaking: Hello! I am Buddy, your AI assistant with a local GPT-2 brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 16:16:02,807 - INFO - Speaking: fuck you
+2025-03-28 16:16:10,517 - INFO - Speaking: fuck you
+2025-03-28 16:16:17,059 - INFO - Speaking: fuck you
+2025-03-28 16:19:53,139 - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\kirth\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-03-28 16:19:53,139 - INFO - Using writeable comtypes cache directory: 'C:\Users\kirth\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\LocalCache\local-packages\Python313\site-packages\comtypes\gen'
+2025-03-28 16:19:56,833 - INFO - GPT-2 model loaded successfully.
+2025-03-28 16:19:56,834 - WARNING - Missing key 'language' in config, using default: en
+2025-03-28 16:19:56,834 - WARNING - Missing key 'voice_index' in config, using default: 0
+2025-03-28 16:19:56,834 - WARNING - Missing key 'max_history' in config, using default: 10
+2025-03-28 16:19:56,835 - INFO - Speaking: Hello! I am Buddy, your AI assistant with a local GPT-2 brain. Say 'Are you there, Buddy?' to wake me up.
+2025-03-28 16:20:27,084 - INFO - Speaking: fuck you
+2025-03-28 16:20:39,258 - INFO - Speaking: fuck you
+2025-03-28 16:20:47,247 - INFO - Speaking: fuck you
+2025-03-28 16:20:52,470 - INFO - Speaking: Shutting down Buddy.
+2025-03-28 16:20:54,713 - INFO - Buddy terminated by user.
