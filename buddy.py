@@ -23,6 +23,7 @@ from datetime import datetime as dt
 import re
 import platform
 import sys
+import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # Configuration and Constants
@@ -57,9 +58,17 @@ except Exception as e:
 # Load GPT-2 model and tokenizer
 try:
     tokenizer = AutoTokenizer.from_pretrained("openai-community/gpt2")
+    # Set a distinct padding token
+    if tokenizer.pad_token is None:
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
     model = AutoModelForCausalLM.from_pretrained("openai-community/gpt2")
-    print("GPT-2 model loaded successfully.")
-    logging.info("GPT-2 model loaded successfully.")
+    # Resize model embeddings to account for new pad token
+    model.resize_token_embeddings(len(tokenizer))
+    # Move to GPU if available
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
+    print(f"GPT-2 model loaded successfully on {device}.")
+    logging.info(f"GPT-2 model loaded successfully on {device}.")
 except Exception as e:
     print(f"Failed to load GPT-2 model: {e}")
     logging.error(f"GPT-2 load error: {e}")
@@ -71,8 +80,8 @@ def load_config():
     default_config = {
         "email": {"sender": "your_email@gmail.com", "password": "your_password"},
         "wake_word": "are you there buddy",
-        "news_api_key": "390427571d96423e97c1040796d6b159",  # Your NewsAPI.org key
-        "weather_api_key": "bf244f1626d9347db0bf15ee4af0d746",  # Your OpenWeatherMap key
+        "news_api_key": "390427571d96423e97c1040796d6b159",
+        "weather_api_key": "bf244f1626d9347db0bf15ee4af0d746",
         "city": "New York",
         "language": "en",
         "voice_index": 0,
@@ -139,7 +148,7 @@ def listen(timeout=5):
         logging.error(f"Speech recognition error: {e}")
         return ""
     except Exception as e:
-        speak("Microphone not detected or access denied.")
+        speak("Microphone not detected or access denied. Please check your mic settings.")
         logging.error(f"Unexpected listen error: {e}")
         return ""
 
@@ -152,27 +161,40 @@ def chat_with_gpt(prompt, use_context=True):
         if use_context and conversation_history:
             for entry in conversation_history[-config["max_history"]:]:
                 input_text += f"{entry['role']}: {entry['content']}\n"
-        input_text += f"user: {prompt}"
+        input_text += f"user: {prompt}\nassistant: "
 
-        # Tokenize input
-        inputs = tokenizer(input_text, return_tensors="pt", truncation=True, max_length=512)
+        # Tokenize input with padding and attention mask
+        inputs = tokenizer(
+            input_text,
+            return_tensors="pt",
+            truncation=True,
+            max_length=512,
+            padding=True,
+            return_attention_mask=True
+        )
+        inputs = {k: v.to(device) for k, v in inputs.items()}  # Move to GPU/CPU
         
-        # Generate response
+        # Generate response with attention mask
         outputs = model.generate(
-            inputs["input_ids"],
-            max_length=500,  # Max output length
+            input_ids=inputs["input_ids"],
+            attention_mask=inputs["attention_mask"],
+            max_length=500,
             num_return_sequences=1,
-            temperature=0.7,  # Creativity control
-            top_k=50,        # Limit token sampling
-            top_p=0.95,      # Nucleus sampling
-            pad_token_id=tokenizer.eos_token_id,  # Handle padding
-            do_sample=True   # Enable sampling for varied responses
+            temperature=0.7,
+            top_k=50,
+            top_p=0.95,
+            pad_token_id=tokenizer.pad_token_id,
+            do_sample=True
         )
         
         # Decode response
         reply = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
-        # Extract only the generated part (remove input echo)
+        # Extract only the generated part
         reply = reply[len(input_text):].strip()
+        
+        # Fallback if response is empty or too short
+        if not reply or len(reply.split()) < 3:
+            reply = "Sorry, I couldn’t come up with a good response. Try asking again!"
 
         # Update conversation history
         conversation_history.append({"role": "user", "content": prompt})
@@ -188,21 +210,18 @@ def chat_with_gpt(prompt, use_context=True):
 
 # Advanced AI Features
 def summarize_text(text):
-    """Summarize a given text using GPT-2."""
     if not text:
         return "No text provided to summarize."
     prompt = f"Summarize this text in a concise manner:\n\n{text}"
     return chat_with_gpt(prompt, use_context=False)
 
 def analyze_sentiment(text):
-    """Analyze sentiment of text using GPT-2."""
     if not text:
         return "No text provided to analyze."
     prompt = f"Analyze the sentiment of this text (positive, negative, neutral) and explain why:\n\n{text}"
     return chat_with_gpt(prompt, use_context=False)
 
 def generate_ideas(topic):
-    """Generate creative ideas on a topic using GPT-2."""
     if not topic:
         return "No topic provided."
     prompt = f"Generate 5 creative ideas related to {topic}."
@@ -210,7 +229,6 @@ def generate_ideas(topic):
 
 # System Monitoring
 def get_system_info():
-    """Fetch detailed system usage statistics."""
     try:
         cpu_usage = psutil.cpu_percent(interval=1)
         ram = psutil.virtual_memory()
@@ -227,7 +245,6 @@ def get_system_info():
 
 # File Management
 def create_file(filename):
-    """Create a new file with error handling."""
     if not filename:
         speak("No filename provided.")
         return
@@ -240,7 +257,6 @@ def create_file(filename):
         logging.error(f"File creation error: {e}")
 
 def read_file(filename):
-    """Read content of a file."""
     if not filename:
         speak("No filename provided.")
         return ""
@@ -256,7 +272,6 @@ def read_file(filename):
 
 # Weather and News
 def get_weather(city=None):
-    """Fetch weather information for a city."""
     city = city or config["city"]
     if not config["weather_api_key"] or "your_openweathermap_key" in config["weather_api_key"]:
         speak("Weather API key is missing or invalid. Please configure it.")
@@ -274,7 +289,6 @@ def get_weather(city=None):
         logging.error(f"Weather error: {e}")
 
 def get_news():
-    """Fetch latest news headlines."""
     if not config["news_api_key"] or "your_newsapi_key" in config["news_api_key"]:
         speak("News API key is missing or invalid. Please configure it.")
         return
@@ -291,7 +305,6 @@ def get_news():
 
 # Email Functionality
 def send_email(to_email, subject, message):
-    """Send an email with error handling."""
     sender_email = config["email"]["sender"]
     sender_password = config["email"]["password"]
     if "your_email" in sender_email or "your_password" in sender_password:
@@ -322,7 +335,6 @@ def send_email(to_email, subject, message):
 reminders = []
 
 def set_reminder(task, delay_minutes):
-    """Set a reminder with a delay in minutes."""
     if not task:
         speak("No task provided.")
         return
@@ -340,7 +352,6 @@ def set_reminder(task, delay_minutes):
         logging.error(f"Invalid delay value: {delay_minutes}")
 
 def remind(task):
-    """Trigger reminder."""
     try:
         speak(f"Reminder: Time to {task}!")
         if reminders and reminders[0]["task"] == task:
@@ -350,7 +361,6 @@ def remind(task):
 
 # Enhanced GUI
 def start_gui():
-    """Launch an improved GUI for Buddy with buttons and command input."""
     print("Starting GUI thread...")
     logging.info("Attempting to start GUI")
     
@@ -379,12 +389,17 @@ def start_gui():
             execute_command(command)
             command_entry.delete(0, tk.END)
 
+    def clear_log():
+        log_text.delete(1.0, tk.END)
+        update_status("Log cleared.")
+
     try:
         root = tk.Tk()
         print("Tkinter root created.")
         root.title("Buddy AI Assistant")
         root.geometry("700x500")
         root.configure(bg="#f0f0f0")
+        root.resizable(True, True)
 
         # Header Frame
         header_frame = tk.Frame(root, bg="#f0f0f0")
@@ -420,6 +435,7 @@ def start_gui():
         ttk.Button(button_frame, text="Screenshot", command=lambda: execute_command("screenshot")).pack(side=tk.LEFT, padx=5)
         ttk.Button(button_frame, text="System Status", command=lambda: execute_command("system status")).pack(side=tk.LEFT, padx=5)
         ttk.Button(button_frame, text="Send Email", command=lambda: execute_command("send email")).pack(side=tk.LEFT, padx=5)
+        ttk.Button(button_frame, text="Clear Log", command=clear_log).pack(side=tk.LEFT, padx=5)
         ttk.Button(button_frame, text="Exit", command=root.quit).pack(side=tk.LEFT, padx=5)
 
         root.after(1000, gui_listen)
@@ -436,7 +452,6 @@ def start_gui():
 
 # Command Execution
 def execute_command(command):
-    """Process and execute voice commands with enhanced AI brain."""
     if not command:
         return
     
@@ -678,7 +693,6 @@ def execute_command(command):
 
 # Main Loop
 def main():
-    """Main loop with wake word detection."""
     speak("Hello! I am Buddy, your AI assistant with a local GPT-2 brain. Say 'Are you there, Buddy?' to wake me up.")
     while True:
         try:
